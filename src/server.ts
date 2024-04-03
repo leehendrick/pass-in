@@ -9,3 +9,5 @@ app.get('/', () => {
 app.listen({ port: 4002 }).then(() => {
     console.log('[-----SERVER RUNNING-----]')
 })
+
+//Just testing
