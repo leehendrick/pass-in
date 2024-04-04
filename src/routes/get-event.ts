@@ -4,6 +4,7 @@ import {z} from "zod";
 import {prisma} from "../lib/prisma";
 
 export async function getEvent(app: FastifyInstance) {
+    // @ts-ignore
     app
         .withTypeProvider<ZodTypeProvider>()
         .get('/events/:eventId', {
